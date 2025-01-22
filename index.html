@@ -43,17 +43,24 @@
         display: inline-block;
         background-color: #333333;
         color: white;
-        padding: 10px 20px;
+        padding: 12px 25px;
         border-radius: 5px;
         text-decoration: none;
         margin-top: 20px;
         font-size: 1.2em;
+        transition: all 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #00FF00;
+        color: black;
       }
 
       /* Layout Container */
       .container {
         width: 100%;
         padding: 20px;
+        text-align: center;
       }
 
       /* Flexbox Layout for Mobile and Tablet */
@@ -62,6 +69,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px;
       }
 
       .main-content img {
@@ -72,6 +80,11 @@
         padding: 10px;
         border-radius: 5px;
         margin-top: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .main-content img:hover {
+        transform: scale(1.05);
       }
 
       /* Mobile and Tablet Styles */
@@ -100,6 +113,10 @@
         .btn {
           font-size: 1em;
         }
+
+        .main-content {
+          padding: 15px;
+        }
       }
 
       /* Tablet specific styling */
@@ -115,6 +132,14 @@
         h2 {
           font-size: 1.8em;
         }
+
+        .main-content {
+          padding: 25px;
+        }
+
+        .btn {
+          padding: 12px 20px;
+        }
       }
 
       /* Desktop Styles */
@@ -123,6 +148,12 @@
           width: 80%;
           margin: auto;
         }
+        h1 {
+          font-size: 3em;
+        }
+        h2 {
+          font-size: 2em;
+        }
       }
     </style>
   </head>
@@ -130,7 +161,7 @@
   <body>
 
     <!-- Header -->
-    <header style="background-color: #151515; padding: 20px;">
+    <header style="background-color: #151515; padding: 25px;">
       <h1>Xpid3r</h1>
       <h2>Cybersecurity & Hacking | Hack to Survive</h2>
       <a href="https://github.com/Xpid3r/Xpid3r.github.io" class="btn">View on GitHub</a>
@@ -166,7 +197,7 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-color: #151515; padding: 20px; text-align: center; color: #00FF00;">
+    <footer style="background-color: #151515; padding: 25px; text-align: center; color: #00FF00;">
       <p>Created by Xpid3r</p>
     </footer>
 
