@@ -18,7 +18,7 @@
     <link rel="canonical" href="https://xpid3r.github.io/">
   </head>
 
-  <body style="background-color: #1e1e1e; color: white; font-family: 'Courier New', Courier, monospace;">
+  <body style="background-color: #1e1e1e; color: white; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 0;">
     <header style="background-color: #151515; padding: 30px; text-align: center;">
       <h1 style="color: #00FF00;">Xpid3r</h1>
       <h2 style="color: #FF1C00;">Cybersecurity & Hacking | Hack to Survive</h2>
@@ -31,6 +31,8 @@
     </header>
 
     <div class="container" style="padding: 30px;">
+
+      <!-- Main Content Section -->
       <section id="main_content">
 
         <p style="font-size: 18px; color: #BBBBBB; text-align: center;">
@@ -38,7 +40,8 @@
         </p>
 
         <p style="text-align: center;">
-          <img src="./assets/images/terminal_output.gif" alt="Terminal Output" width="400" style="border: 2px solid #00FF00; padding: 10px; border-radius: 5px;"/>
+          <!-- Terminal Command-Line GIF -->
+          <img src="https://media.giphy.com/media/xT9IgH0N3Jl28Y8j3W/giphy.gif" alt="Terminal Command-Line Output" width="80%" style="border: 2px solid #00FF00; padding: 10px; border-radius: 5px;"/>
         </p>
 
         <h2 style="color: #FF1C00; text-align: center;">Skills & Expertise:</h2>
@@ -65,8 +68,63 @@
       </section>
     </div>
 
+    <!-- Footer -->
     <footer style="background-color: #151515; padding: 10px; text-align: center; color: #00FF00;">
       <p>Created by Xpid3r</p>
     </footer>
+
+    <!-- Adding Media Queries for Responsiveness -->
+    <style>
+      /* Base Styles for Small Devices (Phones) */
+      body {
+        font-size: 16px;
+      }
+
+      /* Large screen (desktops) */
+      @media screen and (min-width: 1024px) {
+        body {
+          font-size: 18px;
+        }
+        .container {
+          padding: 60px;
+        }
+        header {
+          padding: 40px;
+        }
+      }
+
+      /* Medium screen (tablets) */
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          font-size: 17px;
+        }
+        .container {
+          padding: 50px;
+        }
+      }
+
+      /* Small screen (phones) */
+      @media screen and (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        header {
+          padding: 20px;
+        }
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        img {
+          width: 100%; /* Make the image width 100% on small screens */
+        }
+      }
+    </style>
+
   </body>
 </html>
